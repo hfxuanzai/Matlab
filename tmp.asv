@@ -1,0 +1,6 @@
+Fs = 8000;      
+x1 = audiorecorder(Fs,8,1);
+disp('开始说话');
+recordblocking(x1,10);        %录音10秒钟
+play(x1);      %回放录音数据
+
